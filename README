@@ -6,4 +6,7 @@ You have two files to change:
 Please be sure to use / and not \ when you past your path, it's very important.
 The File opener can sometimes doesn't want to open, it's because in your project folder you have a file, it's very important to have only folders in thi path.
 
+All the scripts are not from me in the shelf: the Divide UV, the Renamer,the Shader Library and the NameSpace Manager was made by others
+You can find their name in the source code.
+
 Now you can load the shelf in Maya.
