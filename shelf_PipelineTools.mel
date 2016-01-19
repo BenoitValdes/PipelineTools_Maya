@@ -1,0 +1,409 @@
+global proc shelf_PipelineTools () {
+    global string $gBuffStr;
+    global string $gBuffStr0;
+    global string $gBuffStr1;
+
+
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Project Creator" 
+        -enableBackground 0
+        -align "center" 
+        -label "ProjectCreator" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Proj+" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "__PATH__/icon/NewProject_32.png" 
+        -image1 "__PATH__/icon/NewProject_32.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import sys\nsys.path.append(r'__PATH__')\nimport config\nimport ProjectCreator\nreload(config)\nreload(ProjectCreator)" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "FileCreator" 
+        -enableBackground 0
+        -align "center" 
+        -label "FileCreator" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "File+" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "__PATH__/icon/NewFile_32.png" 
+        -image1 "__PATH__/icon/NewFile_32.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import sys\nsys.path.append(r'__PATH__')\nimport config\nimport FileCreator\nreload(config)\nreload(FileCreator)" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "FileOpener" 
+        -enableBackground 0
+        -align "center" 
+        -label "FileOpener" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Open" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "__PATH__/icon/OpenFile_32.png" 
+        -image1 "__PATH__/icon/OpenFile_32.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import sys\nsys.path.append(r'__PATH__')\nimport config\nimport FileOpener\nreload(config)\nreload(FileOpener)" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Increment" 
+        -enableBackground 0
+        -align "center" 
+        -label "Increment" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "+1" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "__PATH__/icon/Increment_32.png" 
+        -image1 "__PATH__/icon/Increment_32.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import sys\nsys.path.append(r'__PATH__')\nimport increment as script\nreload(script)\nscript.increment()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Final" 
+        -enableBackground 0
+        -align "center" 
+        -label "Final" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Final" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "__PATH__/icon/Final_32.png" 
+        -image1 "__PATH__/icon/Final_32.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import sys\nsys.path.append(r'__PATH__')\nimport final as script\nreload(script)\nscript.final()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "NameSpaceManager" 
+        -enableBackground 0
+        -align "center" 
+        -label "NameSpaceManager" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "NM" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "__PATH__/icon/NameSpaceEditor_32.png" 
+        -image1 "__PATH__/icon/NameSpaceEditor_32.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import sys\nsys.path.append(r'__PATH__')\nimport NamespaceManager\nNamespaceManager.NamespaceManager()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Edit the references for the current scene" 
+        -enableBackground 0
+        -align "center" 
+        -label "Reference Editor" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "__PATH__/icon/RefEditor_32.png" 
+        -image1 "__PATH__/icon/RefEditor_32.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ReferenceEditor" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Shader Manager" 
+        -enableBackground 0
+        -align "center" 
+        -label "ShaderManager" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "ShMn" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "__PATH__/icon/ShaderLibrary_32.png" 
+        -image1 "__PATH__/icon/ShaderLibrary_32.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import sys\nsys.path.append(r'D:\\Code')\nimport BlissLib\nblissUI = BlissLib.buildUI()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Add Shader" 
+        -enableBackground 0
+        -align "center" 
+        -label "AddShaderToLibrary" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Shad+" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "__PATH__/icon/ShaderAdd_32.png" 
+        -image1 "__PATH__/icon/ShaderAdd_32.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "from BlissLib import shadingNetworkIO\nshadingNetworkIO.ShadingNetwork.writeNetwork()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import KI_Rename\nreload(KI_Rename)\nKI_Rename.main()" 
+        -enableBackground 0
+        -align "center" 
+        -label "import KI_Rename\nreload(KI_Rename)\nKI_Rename.main()" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "__PATH__/icon/Renamer.png" 
+        -image1 "__PATH__/icon/Renamer.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as cmds\n\nui = 'dimRenamer'\nversion = '1.0.0'\ntitle = ui + ' ' + version\n\ndef closeUI():\n    if cmds.window(ui, menuBar = True, exists = True):\n        cmds.deleteUI(ui)\n\ndef dimRenamerUI():\n    global field1\n    global field2\n    global field3\n    global field4\n    global field5\n    closeUI()\n    cmds.window(ui, title = title, sizeable = False)\n    tabs = cmds.tabLayout()\n    tab1 = cmds.columnLayout(columnAttach = ['both', 5], rowSpacing = 10, columnWidth = 220)\n    cmds.separator(style = 'in')\n    cmds.text(label = '..: Renamer :..')\n    cmds.separator(style = 'out')\n    cmds.frameLayout(label = 'Search and Replace', borderStyle='etchedIn', collapse = True, collapsable = True)\n    cmds.text(label = 'Search for:')\n    field1 = cmds.textField()\n    cmds.text(label = 'Replace with:')\n    field2 = cmds.textField()\n    cmds.button(label = 'Apply', command = 'srOption()')\n    cmds.setParent('..')\n    cmds.frameLayout(label = 'Prefix and Sufix', borderStyle='etchedIn', collapse = True, collapsable = True)\n    cmds.text(label = 'Prefix:')\n    field3 = cmds.textField()\n    cmds.text(label = 'Sufix:')\n    field4 = cmds.textField()\n    cmds.button(label = 'Apply', command = 'psOption()')\n    cmds.setParent('..')\n    cmds.frameLayout(label = 'Rename', borderStyle='etchedIn', collapse = True, collapsable = True)\n    cmds.text(label = 'Rename:')\n    field5 = cmds.textField()\n    cmds.button(label = 'Apply', command = 'rOption()')\n    cmds.setParent('..')\n    cmds.setParent('..')\n    tab2 = cmds.columnLayout(columnAttach = ['both', 5], rowSpacing = 10, columnWidth = 220)\n    cmds.text(label = info(), wordWrap = True)\n    cmds.tabLayout( tabs, edit=True, tabLabel=((tab1, 'Main'), (tab2, 'Info')))\n    cmds.setParent('..')\n    cmds.showWindow()\n\ndef srOption():\n    sel = []\n    sel = cmds.ls(selection = True)\n    if sel == []: noSelection()\n    else:\n        search = cmds.textField(field1, text = True, query = True)\n        replace = cmds.textField(field2, text = True, query = True)\n        for i in range(len(sel)):\n            temp = sel[i].replace(search, replace)\n            cmds.rename(sel[i], temp)\n            \ndef psOption():\n    sel = []\n    sel = cmds.ls(selection = True)\n    if sel == []: noSelection()\n    else:\n        prefix = cmds.textField(field3, text = True, query = True)\n        sufix = cmds.textField(field4, text = True, query = True)\n        for i in range(len(sel)):\n            cmds.rename(sel[i], prefix + sel[i] + sufix)\n\ndef rOption():\n    sel = []\n    sel = cmds.ls(selection = True)\n    if sel == []: noSelection()\n    else:\n        renamer = cmds.textField(field5, text = True, query = True)\n        for i in range(len(sel)):\n            cmds.rename(sel[i], renamer + str(i + 1))\n\ndef noSelection():\n    cmds.confirmDialog(message = 'no object was selected')\n\ndef info():\n    infoText = \".: dimRenamer :.\\n\\nThis script is a simple renamer for objects, nodes or anything in your scene do you want to rename.\\nIf you have any comment, sent it to me at:\\ndiegodci@gmail.com\\n\\nThank you! :D\\nDiego Inácio\\n\"\n    return(infoText)\n\ndimRenamerUI()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "DivideUV" 
+        -enableBackground 0
+        -align "center" 
+        -label "DivideUV" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "DivUV" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "__PATH__/icon/DivUV_32.png" 
+        -image1 "__PATH__/icon/DivUV_32.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import sys\nsys.path.append(r'__PATH__')\nimport PfxUV\nPfxUV.layoutUI()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 0
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "PlayBlast" 
+        -enableBackground 0
+        -align "center" 
+        -label "PlayBlast" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "PlaBla" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "__PATH__/icon/Playblast_32.png" 
+        -image1 "__PATH__/icon/Playblast_32.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as cmds\nfrom os import startfile\n\n\ncurrrentScene = unicode(cmds.file(q=True, sn=True)).split(\"/\")[-1].split('.')[0]\nheight = cmds.getAttr(\"defaultResolution.height\")\nwidth = cmds.getAttr(\"defaultResolution.width\")\nprojectPath = cmds.workspace (q=True, rd=True)+\"REVIEW\"\n\n\nversion = 1\nfor file in os.listdir(projectPath):\n    if file.startswith(currrentScene):\n        version += 1\n\nif currrentScene:\n    fileName = currrentScene+\"_pb_\"+str(version)\n    finalFile = projectPath+\"/\"+fileName\n    cmds.playblast( f=finalFile, qlt=100, fmt=\"qt\", w=width, h=height, p=100, orn=True, os=True)\n    startfile(finalFile+\".mov\")\n    \nelse:\n    result = cmds.confirmDialog( title='Alert', message='You are not in the Pipeline')\n" 
+        -sourceType "python" 
+        -commandRepeatable 0
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "BatchRender" 
+        -enableBackground 0
+        -align "center" 
+        -label "BatchRender" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "BR" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "__PATH__/icon/BatchRender_32.png" 
+        -image1 "__PATH__/icon/BatchRender_32.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import sys\nsys.path.append(r'__PATH__')\nimport config\nimport BatchRender\nreload(config)\nreload(BatchRender)" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+} 
