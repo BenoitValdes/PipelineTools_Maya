@@ -1,0 +1,6 @@
+Install:
+You have two files to change:
+- first is config.py you must to replate __PATH__ by the path of your projects location for example D:/Projects
+- second is the shelf, replace __PATH__ by the location of your scripts for example D:/PipelineTolls_Maya
+
+Now you can load the shelf in Maya.
