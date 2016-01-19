@@ -1,10 +1,10 @@
 ''' CONFIGURATION '''
 ''' --------------------------------------------------------------------------------------------------------------------------------------------------------- '''
 import maya.cmds as cmds
-path1 = r'D:\Projects'									#The main project path
+path1 = r'__PATH__'									#The main project path
 path2 = False											#If you have another project directory you can enable PATH2 in adding the path of the directory
 projectPath = path1										#By default the project path is the path1	
-templatePath = r'D:\Code\PipelineTools\Templates'
+templatePath = r'__PATH__/Templates'
 mayaTemplate = 'MayaTemplate_2016.ma'
 workspaceTemplate = 'workspace.mel'
 imgFilePrefix = '\\Render\\<Scene>\\<RenderLayer>\\<RenderLayer>_<Scene>'
