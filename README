@@ -3,4 +3,7 @@ You have two files to change:
 - first is config.py you must to replate __PATH__ by the path of your projects location for example D:/Projects
 - second is the shelf, replace __PATH__ by the location of your scripts for example D:/PipelineTolls_Maya
 
+Please be sure to use / and not \ when you past your path, it's very important.
+The File opener can sometimes doesn't want to open, it's because in your project folder you have a file, it's very important to have only folders in thi path.
+
 Now you can load the shelf in Maya.
